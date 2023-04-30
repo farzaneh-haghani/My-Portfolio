@@ -7,7 +7,6 @@ const montserrat = Montserrat({
   variable: '--font-mont',
 })
 
-
 export default function App({ Component, pageProps }) {
   return (
     <>
