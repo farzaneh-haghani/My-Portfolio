@@ -1,4 +1,3 @@
-import React from "react";
 import Logo from "./Logo";
 import Link from "next/link";
 import HomeLink from "./HomeLink";
@@ -11,7 +10,6 @@ const NavBar = () => {
     <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
       <nav>
         <HomeLink title="Home" href="/" className="mr-8" />
-        <HomeLink title="About" href="/about" className="mr-8" />
         <HomeLink title="Projects" href="/projects" className="mr-8" />
       </nav>
 
