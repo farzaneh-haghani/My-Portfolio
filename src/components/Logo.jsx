@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import logo from "../../public/logo.png";
+import logo from "../../public/images/logo.png";
 
 const Logo = () => {
   const MotionLink = motion(Link);
