@@ -9,7 +9,7 @@ export default function Home() {
       <Head>
         <title>Welcome to My Portfolio!</title>
       </Head>
-      <main className="flex justify-start items-center min-h-full  pt-[7rem]">
+      <main className="flex justify-start items-center min-h-full  pt-[7rem] dark:bg-dark dark:text-white">
         <div className="flex justify-center w-[40%]">
           <Image
             src={picture}
