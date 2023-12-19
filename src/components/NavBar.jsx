@@ -27,9 +27,9 @@ const NavBar = () => {
         <Logo />
       </div>
 
-      <nav className="flex items-center justify-center flex-wrap dark:bg-dark">
+      <nav className="flex items-center justify-center flex-wrap">
         <MotionLink
-          whilehover={{ y: -5, scale: 1.1 }}
+          whileHover={{ y: -5, scale: 1.1 }}
           href="https://www.linkedin.com/in/farzaneh-haghani/"
           target="_blank"
         >
@@ -37,7 +37,7 @@ const NavBar = () => {
         </MotionLink>
 
         <MotionLink
-          whilehover={{ y: -5, scale: 1.1 }}
+          whileHover={{ y: -5, scale: 1.1 }}
           href="https://github.com/farzaneh-haghani"
           target="_blank"
         >
@@ -45,7 +45,7 @@ const NavBar = () => {
         </MotionLink>
 
         <MotionLink
-          whilehover={{ y: -5, scale: 1.1 }}
+          whileHover={{ y: -5, scale: 1.1 }}
           href="https://twitter.com/FarzanehHaghani"
           target="_blank"
         >

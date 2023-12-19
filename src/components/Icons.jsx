@@ -1,7 +1,7 @@
 export const TwitterIcon = () => {
   return (
     <svg
-      className="w-8 ml-6 dark:fill-light"
+      className="w-8 ml-6 dark:fill-light dark:shadow-light dark:shadow-xl"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512"
     >
@@ -13,7 +13,7 @@ export const TwitterIcon = () => {
 export const GitHubIcons = () => {
   return (
     <svg
-      className="w-8 ml-6 dark:fill-light"
+      className="w-8 ml-6 dark:fill-light dark:shadow-light dark:shadow-xl rounded-[50%]"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 496 512"
     >
@@ -25,7 +25,7 @@ export const GitHubIcons = () => {
 export const LinkedinIcons = () => {
   return (
     <svg
-      className="w-8 ml-6 dark:fill-light"
+      className="w-8 ml-6 dark:fill-light dark:shadow-light dark:shadow-xl"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 448 512"
     >
@@ -37,7 +37,7 @@ export const LinkedinIcons = () => {
 export const SunIcon = () => {
   return (
     <svg
-      className="w-8 ml-6 dark:fill-light"
+      className="w-8 ml-6 dark:fill-light dark:shadow-light dark:shadow-xl"
       fill="#000000"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
@@ -69,9 +69,9 @@ export const MoonIcon = () => {
       <path
         d="M3 13.4597C3 17.6241 6.4742 21 10.7598 21C14.0591 21 16.8774 18.9993 18 16.1783C17.1109 16.5841 16.1181 16.8109 15.0709 16.8109C11.2614 16.8109 8.17323 13.8101 8.17323 10.1084C8.17323 8.56025 8.71338 7.13471 9.62054 6C5.87502 6.5355 3 9.67132 3 13.4597Z"
         stroke="#363853"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

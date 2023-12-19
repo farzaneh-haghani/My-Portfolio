@@ -1,7 +1,8 @@
 import Image from "next/image";
-import picture from "../../public/images/profile.jpg";
+import picture from "public/images/profile.jpg";
 import AnimatedText from "@/components/AnimatedText";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -9,20 +10,21 @@ export default function Home() {
       <Head>
         <title>Welcome to My Portfolio!</title>
       </Head>
-      <main className="flex justify-start items-center min-h-full  pt-[7rem] dark:bg-dark dark:text-white">
+      <main className="flex justify-start items-center pt-[7rem] dark:bg-dark dark:text-slate-200">
         <div className="flex justify-center w-[40%]">
           <Image
             src={picture}
             alt="Farzaneh's image"
             className="w-80 rounded-[50%] border border-black"
+            priority
           />
         </div>
         <div className="w-[50%] flex flex-col items-center self-center text-base font-medium text-justify">
           <AnimatedText text="Full Stack Software Developer" />
           <p className="mt-10">
             I am Farzaneh, a lifelong learner with a passion for coding and
-            strong problem-solving with a solid background in computer
-            engineering. I bring hands-on experience in developing web pages
+            strong problem-solving with a solid background in Computer Hardware
+            Engineering. I bring hands-on experience in developing web pages
             using an adaptable stack, including Node, Express, Drizzle,
             Sequelize, PostgreSQL, React, and JavaScript.
           </p>
@@ -43,8 +45,23 @@ export default function Home() {
           </p>
           <p className="mt-4 font-bold">
             Let&apos;s connect and explore how we can work together to create
-            impactful solutions!
+            impactful solutions!<span className="text-2xl"> 🚀</span>
           </p>
+          <div className="flex items-center justify-center mt-2">
+            <Link
+              href="/FarzanehCV.pdf"
+              target="_blank"
+              className="flex items-center bg-dark pt-4 pb-2 px-10 rounded-lg text-xl font-extrabold dark:border dark:border-light"
+            >
+              <div className="animate-bounce">
+                <span className="text-red-600">C</span>
+                <span className="text-gray-200">V</span>
+              </div>
+            </Link>
+            <Link href="mailto:farzaneh.haghani@gmail.com" target="_blank">
+              Contact
+            </Link>
+          </div>
         </div>
       </main>
     </>

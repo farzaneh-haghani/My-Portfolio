@@ -1,12 +1,12 @@
 import Head from "next/head";
 import AnimatedText from "@/components/AnimatedText";
 import ProjectCard from "@/components/ProjectCard";
-import bookMe from "../../public/images/bookMe.png";
-import star from "../../public/images/star.png";
-import cafeMenu from "../../public/images/cafeMenu.png";
-import video from "../../public/images/video.png";
-import candyCrush from "../../public/images/candyCrush.png";
-import eShop from "../../public/images/eShop.png";
+import bookMe from "public/images/bookMe.png";
+import star from "public/images/star.png";
+import cafeMenu from "public/images/cafeMenu.png";
+import video from "public/images/video.png";
+import candyCrush from "public/images/candyCrush.png";
+import eShop from "public/images/eShop.png";
 
 const projects = () => {
   return (
