@@ -3,8 +3,8 @@ import Logo from "./Logo";
 import Link from "next/link";
 import HomeLink from "./HomeLink";
 import {
-  GitHubIcons,
-  LinkedinIcons,
+  GitHubIcon,
+  LinkedinIcon,
   TwitterIcon,
   SunIcon,
   MoonIcon,
@@ -33,7 +33,7 @@ const NavBar = () => {
           href="https://www.linkedin.com/in/farzaneh-haghani/"
           target="_blank"
         >
-          <LinkedinIcons />
+          <LinkedinIcon />
         </MotionLink>
 
         <MotionLink
@@ -41,7 +41,7 @@ const NavBar = () => {
           href="https://github.com/farzaneh-haghani"
           target="_blank"
         >
-          <GitHubIcons />
+          <GitHubIcon />
         </MotionLink>
 
         <MotionLink

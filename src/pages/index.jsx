@@ -3,14 +3,18 @@ import picture from "public/images/profile.jpg";
 import AnimatedText from "@/components/AnimatedText";
 import Head from "next/head";
 import Link from "next/link";
+import { DownloadIcon, MailIcon } from "../components/Icons";
+import { useState } from "react";
 
 export default function Home() {
+  const [isClicked, setIsClicked] = useState(false);
+
   return (
     <>
       <Head>
         <title>Welcome to My Portfolio!</title>
       </Head>
-      <main className="flex justify-start items-center pt-[7rem] dark:bg-dark dark:text-slate-200">
+      <main className="flex justify-start items-center pt-[5rem] dark:bg-dark dark:text-slate-200">
         <div className="flex justify-center w-[40%]">
           <Image
             src={picture}
@@ -47,21 +51,34 @@ export default function Home() {
             Let&apos;s connect and explore how we can work together to create
             impactful solutions!<span className="text-2xl"> 🚀</span>
           </p>
-          <div className="flex items-center justify-center mt-2">
+          <div className="flex items-center justify-between mt-10 w-1/3">
             <Link
+              onClick={() => setIsClicked(true)}
               href="/FarzanehCV.pdf"
               target="_blank"
-              className="flex items-center bg-dark pt-4 pb-2 px-10 rounded-lg text-xl font-extrabold dark:border dark:border-light"
+              download={true}
+              className="flex items-center bg-dark pt-4 pb-2 px-8 rounded-xl text-xl font-extrabold dark:border dark:border-light"
             >
-              <div className="animate-bounce">
-                <span className="text-red-600">C</span>
-                <span className="text-gray-200">V</span>
-              </div>
+              <span className="text-red-600">C</span>
+              <span className="text-gray-200">V</span>
+              <span className={!isClicked ? "animate-bounce" : ""}>
+                <DownloadIcon />
+              </span>
             </Link>
-            <Link href="mailto:farzaneh.haghani@gmail.com" target="_blank">
-              Contact
+            <Link
+              href="mailto:farzaneh.haghani@gmail.com"
+              target="_blank"
+              className="flex items-center pt-4 pb-2 px-10 bg-dark text-light rounded-xl text-xl font-extrabold dark:border dark:border-light"
+            >
+              <MailIcon />
             </Link>
           </div>
+          {isClicked && (
+            <p className="text-red-600 mt-5">
+              Thank you for downloading my CV! You can find it in your download
+              directory.
+            </p>
+          )}
         </div>
       </main>
     </>

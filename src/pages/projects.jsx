@@ -1,12 +1,12 @@
 import Head from "next/head";
 import AnimatedText from "@/components/AnimatedText";
 import ProjectCard from "@/components/ProjectCard";
-import bookMe from "public/images/bookMe.png";
-import star from "public/images/star.png";
-import cafeMenu from "public/images/cafeMenu.png";
-import video from "public/images/video.png";
-import candyCrush from "public/images/candyCrush.png";
-import eShop from "public/images/eShop.png";
+import bookMe from "public/images/bookMe.jpg";
+import star from "public/images/star.jpg";
+import cafeMenu from "public/images/cafeMenu.jpg";
+import video from "public/images/video.jpg";
+import candyCrush from "public/images/candyCrush.jpg";
+import eShop from "public/images/eShop.jpg";
 
 const projects = () => {
   return (
@@ -14,14 +14,14 @@ const projects = () => {
       <Head>
         <title>Projects Page</title>
       </Head>
-      <main className="flex flex-col justify-start items-center min-h-full p-[7rem]">
+      <main className="flex flex-col justify-start items-center min-h-full p-[5rem]">
         <div>
           <AnimatedText text="My Projects Gallery" />
         </div>
         <div className="grid grid-cols-12 grid-24 gap-20 mt-10">
           <div className="col-span-4">
             <ProjectCard
-              link="https://star-cyf-client.onrender.com/"
+              link="https://star-evolution.onrender.com/"
               github="https://github.com/fazbazjaz/star"
               title="Star"
               img={star}

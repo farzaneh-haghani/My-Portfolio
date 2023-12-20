@@ -10,7 +10,7 @@ export const TwitterIcon = () => {
   );
 };
 
-export const GitHubIcons = () => {
+export const GitHubIcon = () => {
   return (
     <svg
       className="w-8 ml-6 dark:fill-light dark:shadow-light dark:shadow-xl rounded-[50%]"
@@ -22,7 +22,7 @@ export const GitHubIcons = () => {
   );
 };
 
-export const LinkedinIcons = () => {
+export const LinkedinIcon = () => {
   return (
     <svg
       className="w-8 ml-6 dark:fill-light dark:shadow-light dark:shadow-xl"
@@ -73,6 +73,40 @@ export const MoonIcon = () => {
         strokeLinecap="round"
         strokeLinejoin="round"
       />
+    </svg>
+  );
+};
+
+export const DownloadIcon = () => {
+  return (
+    <svg
+      class="w-8 ml-6 text-light dark:shadow-light dark:shadow-xl pl-2"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 20 19"
+    >
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M15 15h.01M4 12H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1h-3M9.5 1v10.93m4-3.93-4 4-4-4"
+      />
+    </svg>
+  );
+};
+
+export const MailIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 32 32"
+      class="w-8 fill-light dark:shadow-light dark:shadow-xl"
+    >
+      <g data-name="20-Email-Write">
+        <path d="M29 3H3a3 3 0 0 0-3 3v18a3 3 0 0 0 3 3h13v-2H3a1 1 0 0 1-1-1V6.23l13.42 9.58a1 1 0 0 0 1.16 0L30 6.23V15h2V6a3 3 0 0 0-3-3zM16 13.77 3.72 5h24.56z" />
+        <path d="M26 15h-4a1 1 0 0 0-1 1v10a1 1 0 0 0 .29.71l2 2a1 1 0 0 0 1.41 0l2-2A1 1 0 0 0 27 26V16a1 1 0 0 0-1-1zm-1 10.59-1 1-1-1V21h2z" />
+      </g>
     </svg>
   );
 };
