@@ -4,22 +4,14 @@ const { fontFamily } = require("tailwindcss/defaultTheme");
 
 module.exports = {
   darkMode: "class",
-  content: [
-    // Or if using `src` directory:
-    "./src/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
-      fontFamily: {
-        mont: ["var(--font-mont)", ...fontFamily.sans],
-      },
       colors: {
         dark: "#000",
         light: "#fff",
-        primary: "#f99d8f",
-        primaryDark: "#cccccc",
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-3d")({ legacy: true })],
 };

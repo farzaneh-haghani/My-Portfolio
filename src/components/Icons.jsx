@@ -37,8 +37,7 @@ export const LinkedinIcon = () => {
 export const SunIcon = () => {
   return (
     <svg
-      className="w-8 ml-6 dark:fill-light dark:shadow-light dark:shadow-xl"
-      fill="#000000"
+      className="w-9 ml-6 dark:fill-light rounded-[50%] dark:shadow-light dark:shadow-xl"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -80,7 +79,7 @@ export const MoonIcon = () => {
 export const DownloadIcon = () => {
   return (
     <svg
-      class="w-8 ml-6 text-light dark:shadow-light dark:shadow-xl pl-2"
+      class="w-8 ml-6 text-light pl-2"
       aria-hidden="true"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 20 19"
@@ -101,12 +100,35 @@ export const MailIcon = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 32 32"
-      class="w-8 fill-light dark:shadow-light dark:shadow-xl"
+      class="w-8 fill-light"
     >
       <g data-name="20-Email-Write">
         <path d="M29 3H3a3 3 0 0 0-3 3v18a3 3 0 0 0 3 3h13v-2H3a1 1 0 0 1-1-1V6.23l13.42 9.58a1 1 0 0 0 1.16 0L30 6.23V15h2V6a3 3 0 0 0-3-3zM16 13.77 3.72 5h24.56z" />
         <path d="M26 15h-4a1 1 0 0 0-1 1v10a1 1 0 0 0 .29.71l2 2a1 1 0 0 0 1.41 0l2-2A1 1 0 0 0 27 26V16a1 1 0 0 0-1-1zm-1 10.59-1 1-1-1V21h2z" />
       </g>
+    </svg>
+  );
+};
+
+export const Deploy = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="icon icon-tabler icon-tabler-world-code w-10 h-10 ml-6 fill-light dark:fill-dark dark:shadow-light dark:shadow-xl rounded-[50%]"
+      viewBox="0 0 24 24"
+      strokeWidth="2"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M20.942 13.02a9 9 0 1 0 -9.47 7.964" />
+      <path d="M3.6 9h16.8" />
+      <path d="M3.6 15h9.9" />
+      <path d="M11.5 3a17 17 0 0 0 0 18" />
+      <path d="M12.5 3c2 3.206 2.837 6.913 2.508 10.537" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
     </svg>
   );
 };

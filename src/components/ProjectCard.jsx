@@ -1,33 +1,59 @@
 import Image from "next/image";
 import Link from "next/link";
-import { GitHubIcon } from "./Icons";
+import { Deploy, GitHubIcon } from "./Icons";
 
-const ProjectCard = ({ link, title, summary, img, github }) => {
+const ProjectCard = ({
+  type,
+  link,
+  title,
+  businessProblem,
+  summary,
+  skills,
+  img,
+  app,
+  github,
+}) => {
   return (
-    <article
-      className="h-full flex-col items-center justify-between rounded-3xl 
-      border dark:border-gray-600 border-gray-200  shadow-slate-500 shadow-xl p-10 hover:scale-95 duration-300"
-    >
-      <div>
-        <Image src={img} alt={title} className="h-52 border" />
-      </div>
-      <h2 className=" my-3 text-red-600 font-bold text-3xl">{title}</h2>
-      <p className="text-base text-justify h-56 dark:text-slate-200">
-        {summary}
-      </p>
-      <div className="mt-3 flex justify-between">
-        <Link href={github} target="_blank">
-          <GitHubIcon />
-        </Link>
-        <Link
-          href={link}
-          target="_blank"
-          className="rounded-lg bg-dark text-light py-2 px-6 text-lg font-semibold  border border-gray-400"
-        >
-          Visit Project
-        </Link>
-      </div>
-    </article>
+    <div className="relative transform-style-3d transition-all ease-out duration-1000 hover:rotate-y-180 w-full">
+      <article className="backface-hidden h-full flex-col content-between rounded-3xl border dark:border-gray-600  shadow-slate-500 shadow-xl p-10 dark:text-slate-200">
+        <div className="mb-5 flex justify-between font-bold">
+          <h2 className="text-3xl text-red-600">{title}</h2>
+          <span className="mt-1">{type}</span>
+        </div>
+        <Image src={img} alt={title} className="border h-64" />
+        <p className="font-bold mt-1 text-center">{app}</p>
+      </article>
+
+      <article
+        className="absolute top-0 backface-hidden rotate-y-180 rounded-3xl h-full w-full flex-col content-between
+      border dark:border-gray-600 shadow-slate-500 shadow-xl p-10 dark:text-slate-200"
+      >
+        <p className="text-justify">
+          <b>{businessProblem ? "Business Problem: " : "Summary: "}</b>
+          {businessProblem ? businessProblem : summary}
+        </p>
+        <div className="mt-3">
+          <div className="flex flex-wrap">
+            {skills.split("-").map((skill, index) => (
+              <span
+                key={index}
+                className="bg-gray-300 dark:text-dark m-1 rounded-xl px-3"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+        <div className="flex justify-evenly mt-7">
+          <Link href={github} target="_blank">
+            <GitHubIcon />
+          </Link>
+          <Link href={link} target="_blank">
+            <Deploy />
+          </Link>
+        </div>
+      </article>
+    </div>
   );
 };
 

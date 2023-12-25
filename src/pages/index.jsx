@@ -11,9 +11,6 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>Welcome to My Portfolio!</title>
-      </Head>
       <main className="flex justify-start items-center pt-[5rem] dark:bg-dark dark:text-slate-200">
         <div className="flex justify-center w-[40%]">
           <Image
@@ -74,7 +71,7 @@ export default function Home() {
             </Link>
           </div>
           {isClicked && (
-            <p className="text-red-600 mt-5">
+            <p className="text-green-600 mt-5">
               Thank you for downloading my CV! You can find it in your download
               directory.
             </p>

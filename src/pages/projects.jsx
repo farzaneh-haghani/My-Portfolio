@@ -10,72 +10,85 @@ import eShop from "public/images/eShop.jpg";
 
 const projects = () => {
   return (
-    <>
-      <Head>
-        <title>Projects Page</title>
-      </Head>
-      <main className="flex flex-col justify-start items-center min-h-full p-[5rem]">
-        <div>
-          <AnimatedText text="My Projects Gallery" />
+    <main className="flex flex-col justify-start items-center min-h-full p-[5rem]">
+      <div>
+        <AnimatedText text="My Projects" />
+      </div>
+      <div className="grid grid-cols-12 gap-20 mt-10">
+        <div className="col-span-4">
+          <ProjectCard
+            type="Team Work"
+            link="https://star-evolution.onrender.com/"
+            github="https://github.com/fazbazjaz/star"
+            title="Star"
+            img={star}
+            businessProblem="Trainees at CodeYourFuture struggle to structure interview examples using the standardized STAR format (Situation, Task, Action, Result). A proposed solution involves a user-friendly system with individual accounts, STAR format recording, and options for commenting, searching, and sorting."
+            skills="React.js-Tanstack Query-Jest-Express.js using TypeScript-Drizzle-PostgreSQL-Oauth-Material UI"
+            app="Full Stack Application"
+          />
         </div>
-        <div className="grid grid-cols-12 grid-24 gap-20 mt-10">
-          <div className="col-span-4">
-            <ProjectCard
-              link="https://star-evolution.onrender.com/"
-              github="https://github.com/fazbazjaz/star"
-              title="Star"
-              img={star}
-              summary="This is a Full Stack App for CodeYourfuture Trainee, collaboratively developed by a team."
-            />
-          </div>
-          <div className="col-span-4">
-            <ProjectCard
-              link="https://starter-kit-all6.onrender.com"
-              github="https://github.com/karleenmsrichards/final-project-gp2"
-              title="BookMe"
-              img={bookMe}
-              summary="This is a Full Stack App for business bookings, collaboratively developed by a team. Discover experts, arrange appointments with Google Calendar integration and Google Authentication (OAuth), manage data using Sequelize. The user-friendly interface, built on React and Express, is enhanced by the sleek design of Material UI, ensuring a smooth and visually pleasing booking experience."
-            />
-          </div>
-          <div className="col-span-4">
-            <ProjectCard
-              link="https://teamwork-cafe-menu.netlify.app"
-              github="https://github.com/farzaneh-haghani/Teamwork-Cafe-Menu"
-              title="CafeMenu"
-              img={cafeMenu}
-              summary="This is a full stack app with an admin panel for menu management, including additions, edits, deletions, and efficient search. Developed collaboratively by a team using React, Express, PostgreSQL, and Tailwind CSS, it ensures straightforward cafe offering management."
-            />
-          </div>
-          <div className="col-span-4">
-            <ProjectCard
-              link="https://farzaneh-haghani-video-recommendation.netlify.app"
-              github="https://github.com/farzaneh-haghani/Full-Stack-Project-Assessment"
-              title="Video Recommendation"
-              img={video}
-              summary="A full stack app built with React, Express, PostgreSQL, and Material UI. Easily share YouTube video links, rate them with likes or dislikes, and sort by ascending or descending order. The app also offers efficient video search functionality for a comprehensive user experience."
-            />
-          </div>
-          <div className="col-span-4">
-            <ProjectCard
-              link="https://teamwork-candycrush.netlify.app"
-              github="https://github.com/Farnooshmo/teamwork-candy-crush-react"
-              title="Candy Crush"
-              img={candyCrush}
-              summary="A delightful game, crafted for desktop play by a collaborative team. Developed using React and basic CSS, it provides an enjoyable gaming experience on your desktop, invoking memories of the classic Candy Crush and ensuring hours of entertainment and challenge."
-            />
-          </div>
-          <div className="col-span-4">
-            <ProjectCard
-              link="https://london9-amazon-clone-50-react-project.netlify.app"
-              github="https://github.com/farzaneh-haghani/Teamwork-eShop"
-              title="eShop"
-              img={eShop}
-              summary="A collaborative effort brings you a responsive React app integrated with Firebase for authentication. Easily add and remove items from your basket, enhancing your shopping experience."
-            />
-          </div>
+        <div className="col-span-4">
+          <ProjectCard
+            type="Team Work"
+            link="https://starter-kit-all6.onrender.com"
+            github="https://github.com/karleenmsrichards/final-project-gp2"
+            title="BookMe"
+            img={bookMe}
+            businessProblem="Users face challenges in finding and booking experts proficient in various languages for consultations. Current platforms are limited to specific services (e.g., plumbing, legal, tech) and lack inclusivity. The absence of a language filter feature complicates the process of finding professionals fluent in specific languages."
+            skills="React.js-Express.js-Sequelize-PostgreSQL-Oauth-Material UI"
+            app="Full Stack Application"
+          />
         </div>
-      </main>
-    </>
+        <div className="col-span-4">
+          <ProjectCard
+            type="Team Work"
+            link="https://teamwork-cafe-menu.netlify.app"
+            github="https://github.com/farzaneh-haghani/Teamwork-Cafe-Menu"
+            title="CafeMenu"
+            img={cafeMenu}
+            businessProblem="Cafes struggle to handle menus efficiently because their management systems are not user-friendly. Without an easy admin panel, it's hard to add, edit, or remove items smoothly. The existing tools also lack a good search feature, making it tough for cafe owners to manage their menus effectively."
+            skills="React.js-Express.js-PostgreSQL-Tailwind CSS"
+            app="Full Stack Application"
+          />
+        </div>
+        <div className="col-span-4">
+          <ProjectCard
+            type="Individual"
+            link="https://farzaneh-haghani-video-recommendation.netlify.app"
+            github="https://github.com/farzaneh-haghani/Full-Stack-Project-Assessment"
+            title="Video Hub"
+            img={video}
+            businessProblem="Existing video platforms lack user control, particularly with YouTube content. There's a need for a user-friendly system enabling effortless video posting, deletion, and embedded watching. Additionally, essential features such as CRUD operations and voting are required for an enhanced user experience."
+            skills="React.js-Express.js-PostgreSQL-MAterial UI"
+            app="Full Stack Application"
+          />
+        </div>
+        <div className="col-span-4">
+          <ProjectCard
+            type="Team Work"
+            link="https://teamwork-candycrush.netlify.app"
+            github="https://github.com/Farnooshmo/teamwork-candy-crush-react"
+            title="Candy Crush"
+            img={candyCrush}
+            summary="The Candy Crush game is a delightful desktop experience created with React and basic CSS. While it provides an enjoyable gaming session, it currently focuses solely on tracking points without introducing levels or rewards. Enhancing the game's engagement could involve adding new and exciting elements to keep players entertained and motivated."
+            skills="React.js-CSS"
+            app="React Application"
+          />
+        </div>
+        <div className="col-span-4">
+          <ProjectCard
+            type="Team Work"
+            link="https://london9-amazon-clone-50-react-project.netlify.app"
+            github="https://github.com/farzaneh-haghani/Teamwork-eShop"
+            title="eShop"
+            img={eShop}
+            summary="Experience seamless online shopping with our commercial app—a responsive React application seamlessly integrated with Firebase for secure authentication. Enjoy the convenience of effortlessly adding and removing items from your basket, elevating your shopping journey for a hassle-free and user-friendly experience."
+            skills="React.js-Firebase-CSS"
+            app="React Application"
+          />
+        </div>
+      </div>
+    </main>
   );
 };
 
