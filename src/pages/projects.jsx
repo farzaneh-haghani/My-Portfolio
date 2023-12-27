@@ -79,7 +79,7 @@ const projects = () => {
           <ProjectCard
             type="Team Work"
             link="https://london9-amazon-clone-50-react-project.netlify.app"
-            github="https://github.com/farzaneh-haghani/Teamwork-eShop"
+            github="https://github.com/ShayanMahnam/team-amazon-clone"
             title="eShop"
             img={eShop}
             summary="Experience seamless online shopping with our commercial app—a responsive React application seamlessly integrated with Firebase for secure authentication. Enjoy the convenience of effortlessly adding and removing items from your basket, elevating your shopping journey for a hassle-free and user-friendly experience."

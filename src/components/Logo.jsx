@@ -21,11 +21,11 @@ const Logo = () => {
             scale: 1.2,
             transition: { ease: "easeOut", duration: 1, repeat: Infinity },
           }}
-          className="w-16 h-16 bg-dark text-light flex items-center justify-center text-2xl font-bold rounded-full dark:border dark:border-light"
+          className="rounded-full dark:border dark:border-light"
         >
           <Image
             href="/"
-            className="w-16 h-16 bg-dark text-light flex items-center justify-center  text-2xl font-bold rounded-full dark:border dark:border-light"
+            className="w-16 h-16 rounded-full dark:border dark:border-light"
             src={logo}
             alt="my logo"
           ></Image>

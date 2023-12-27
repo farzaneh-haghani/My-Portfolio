@@ -79,7 +79,7 @@ export const MoonIcon = () => {
 export const DownloadIcon = () => {
   return (
     <svg
-      class="w-8 ml-6 text-light pl-2"
+      className="w-8 ml-6 text-light pl-2"
       aria-hidden="true"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 20 19"
@@ -100,7 +100,7 @@ export const MailIcon = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 32 32"
-      class="w-8 fill-light"
+      className="w-8 fill-light"
     >
       <g data-name="20-Email-Write">
         <path d="M29 3H3a3 3 0 0 0-3 3v18a3 3 0 0 0 3 3h13v-2H3a1 1 0 0 1-1-1V6.23l13.42 9.58a1 1 0 0 0 1.16 0L30 6.23V15h2V6a3 3 0 0 0-3-3zM16 13.77 3.72 5h24.56z" />

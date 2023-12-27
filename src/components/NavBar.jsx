@@ -14,6 +14,7 @@ import useThemeSwitcher from "./hooks/useThemeSwitcher";
 
 const NavBar = () => {
   const [mode, setMode] = useThemeSwitcher();
+
   const MotionLink = motion(Link);
 
   return (
@@ -27,7 +28,7 @@ const NavBar = () => {
         <Logo />
       </div>
 
-      <nav className="flex items-center justify-center flex-wrap">
+      <nav className="md:flex items-center justify-center flex-wrap">
         <MotionLink
           whileHover={{ y: -5, scale: 1.1 }}
           href="https://www.linkedin.com/in/farzaneh-haghani/"
@@ -55,7 +56,7 @@ const NavBar = () => {
           onClick={() => setMode(mode === "dark" ? "light" : "dark")}
           className="ml-3 flex items-center justify-center rounded-full p-1"
         >
-          {mode === "dark" ? <SunIcon /> : <MoonIcon className={"fill-dark"} />}
+          {mode === "dark" ? <SunIcon /> : <MoonIcon />}
         </button>
       </nav>
     </header>

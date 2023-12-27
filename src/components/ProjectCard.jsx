@@ -15,7 +15,7 @@ const ProjectCard = ({
 }) => {
   return (
     <div className="relative transform-style-3d transition-all ease-out duration-1000 hover:rotate-y-180 w-full">
-      <article className="backface-hidden h-full flex-col content-between rounded-3xl border dark:border-gray-600  shadow-slate-500 shadow-xl p-10 dark:text-slate-200">
+      <article className="backface-hidden h-full flex-col content-between rounded-3xl border dark:border-gray-600  shadow-slate-500 shadow-xl p-10 dark:text-slate-200 bg-neutral-100 dark:bg-neutral-900">
         <div className="mb-5 flex justify-between font-bold">
           <h2 className="text-3xl text-red-600">{title}</h2>
           <span className="mt-1">{type}</span>

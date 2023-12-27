@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <>
-      <main className="flex justify-start items-center pt-[5rem] dark:bg-dark dark:text-slate-200">
+      <main className="lg:flex justify-start items-center pt-[5rem] dark:bg-dark dark:text-slate-200">
         <div className="flex justify-center w-[40%]">
           <Image
             src={picture}
@@ -54,7 +54,7 @@ export default function Home() {
               href="/FarzanehCV.pdf"
               target="_blank"
               download={true}
-              className="flex items-center bg-dark pt-4 pb-2 px-8 rounded-xl text-xl font-extrabold dark:border dark:border-light"
+              className="flex items-center bg-black pt-4 pb-2 px-8 rounded-xl text-xl font-extrabold dark:border dark:border-light"
             >
               <span className="text-red-600">C</span>
               <span className="text-gray-200">V</span>
@@ -65,7 +65,7 @@ export default function Home() {
             <Link
               href="mailto:farzaneh.haghani@gmail.com"
               target="_blank"
-              className="flex items-center pt-4 pb-2 px-10 bg-dark text-light rounded-xl text-xl font-extrabold dark:border dark:border-light"
+              className="flex items-center pt-4 pb-2 px-10 bg-black text-light rounded-xl text-xl font-extrabold dark:border dark:border-light"
             >
               <MailIcon />
             </Link>
