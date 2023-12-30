@@ -14,7 +14,7 @@ const projects = () => {
       <div>
         <AnimatedText text="My Projects" />
       </div>
-      <div className="grid sm:grid-cols-4 md:grid-cols-8 xl:grid-cols-12 gap-5 mt-10">
+      <div className="grid sm:grid-cols-4 md:grid-cols-8 xl:grid-cols-12 gap-10 xl:gap-20 mt-10">
         <div className="col-span-4">
           <ProjectCard
             type="Team Work"
