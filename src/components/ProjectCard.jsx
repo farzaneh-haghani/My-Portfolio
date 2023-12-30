@@ -17,7 +17,7 @@ const ProjectCard = ({
     <div className="relative transform-style-3d transition-all ease-out duration-1000 hover:rotate-y-180 w-full hover:backface-hidden">
       <article className="h-full flex flex-col content-between rounded-3xl border dark:border-gray-600  shadow-slate-500 shadow-xl p-10 dark:text-slate-200 bg-neutral-100 dark:bg-neutral-900">
         <div className="mb-5 flex justify-between font-bold">
-          <h2 className="text-3xl text-red-600">{title}</h2>
+          <h2 className="text-2xl lg:text-3xl text-red-600">{title}</h2>
           <span className="mt-1">{type}</span>
         </div>
         <Image src={img} alt={title} className="border h-64" />
@@ -26,9 +26,9 @@ const ProjectCard = ({
 
       <article
         className="absolute top-0 backface-hidden rotate-y-180 rounded-3xl h-full w-full flex flex-col justify-evenly 
-      border dark:border-gray-600 shadow-slate-500 shadow-xl p-2 sm:p-4 md:p-6 lg:p-8 xl:p-10 dark:text-slate-200"
+      border dark:border-gray-600 shadow-slate-500 shadow-xl p-2 sm:p-4 dark:text-slate-200"
       >
-        <p className="md:text-justify">
+        <p className="text-justify">
           <b>{businessProblem ? "Business Problem: " : "Summary: "}</b>
           {businessProblem ? businessProblem : summary}
         </p>

@@ -20,7 +20,7 @@ export default function Home() {
         />
       </div>
       <div className="lg:w-[55%] flex flex-col items-center self-center text-base font-medium text-justify p-5">
-        <AnimatedText text="Full Stack Software Developer" />
+        <AnimatedText text="Full Stack Software Engineer" />
         <p className="mt-10">
           I am Farzaneh, a lifelong learner with a passion for coding and strong
           problem-solving with a solid background in Computer Hardware

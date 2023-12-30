@@ -14,7 +14,7 @@ const projects = () => {
       <div>
         <AnimatedText text="My Projects" />
       </div>
-      <div className="grid sm:grid-cols-4 md:grid-cols-8 xl:grid-cols-12 gap-20 mt-10">
+      <div className="grid sm:grid-cols-4 md:grid-cols-8 xl:grid-cols-12 gap-5 mt-10">
         <div className="col-span-4">
           <ProjectCard
             type="Team Work"
@@ -23,7 +23,7 @@ const projects = () => {
             title="Star"
             img={star}
             businessProblem="Trainees at CodeYourFuture struggle to structure interview examples using the standardized STAR format (Situation, Task, Action, Result). A proposed solution involves a user-friendly system with individual accounts, STAR format recording, and options for commenting, searching, and sorting."
-            skills="React.js-Tanstack Query-Jest-Express.js using TypeScript-Drizzle-PostgreSQL-Oauth-Material UI"
+            skills="React.js-Tanstack Query-Jest-Express.js-TypeScript-Drizzle-PostgreSQL-Oauth-Material UI"
             app="Full Stack Application"
           />
         </div>

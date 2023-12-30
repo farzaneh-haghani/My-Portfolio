@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 import { Montserrat } from "next/font/google";
 import NavBar from "@/components/NavBar";
 import Head from "next/head";
+import Footer from "@/components/Footer";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -38,6 +39,7 @@ export default function App({ Component, pageProps }) {
       <main className="bg-light dark:bg-dark min-h-screen ">
         <NavBar />
         <Component {...pageProps} />
+        <Footer />
       </main>
     </>
   );
