@@ -10,11 +10,11 @@ import eShop from "public/images/eShop.jpg";
 
 const projects = () => {
   return (
-    <main className="flex flex-col justify-start items-center min-h-full p-[5rem]">
+    <main className="flex flex-col justify-start items-center min-h-full py-[5rem] px-[1rem] sm:px-[2rem] md:px-[3rem] lg:px-[4rem] xl:px-[5rem]">
       <div>
         <AnimatedText text="My Projects" />
       </div>
-      <div className="grid grid-cols-12 gap-20 mt-10">
+      <div className="grid sm:grid-cols-4 md:grid-cols-8 xl:grid-cols-12 gap-20 mt-10">
         <div className="col-span-4">
           <ProjectCard
             type="Team Work"

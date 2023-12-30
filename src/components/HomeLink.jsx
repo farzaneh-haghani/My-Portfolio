@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 const HomeLink = ({ href, title, className = "" }) => {
   const router = useRouter();
   return (
-    <Link href={href} className={`${className} relative group`}>
+    <Link href={href} className={`${className} relative`}>
       {title}
       <span
         className={`h-[1px] inline-block bg-dark dark:bg-light

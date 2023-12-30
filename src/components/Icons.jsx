@@ -1,7 +1,7 @@
 export const TwitterIcon = () => {
   return (
     <svg
-      className="w-8 ml-6 dark:fill-light dark:shadow-light dark:shadow-xl"
+      className="w-8 ml-6 dark:fill-light"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512"
     >
@@ -13,7 +13,7 @@ export const TwitterIcon = () => {
 export const GitHubIcon = () => {
   return (
     <svg
-      className="w-8 ml-6 dark:fill-light dark:shadow-light dark:shadow-xl rounded-[50%]"
+      className="w-8 ml-6 dark:fill-light rounded-[50%]"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 496 512"
     >
@@ -25,7 +25,7 @@ export const GitHubIcon = () => {
 export const LinkedinIcon = () => {
   return (
     <svg
-      className="w-8 ml-6 dark:fill-light dark:shadow-light dark:shadow-xl"
+      className="w-8 ml-6 dark:fill-light"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 448 512"
     >
@@ -37,7 +37,7 @@ export const LinkedinIcon = () => {
 export const SunIcon = () => {
   return (
     <svg
-      className="w-9 ml-6 dark:fill-light rounded-[50%] dark:shadow-light dark:shadow-xl"
+      className="w-9 ml-6 dark:fill-light rounded-[50%]"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -114,7 +114,7 @@ export const Deploy = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      class="icon icon-tabler icon-tabler-world-code w-10 h-10 ml-6 fill-light dark:fill-dark dark:shadow-light dark:shadow-xl rounded-[50%]"
+      class="icon icon-tabler icon-tabler-world-code w-10 h-10 ml-6 fill-light dark:fill-dark rounded-[50%]"
       viewBox="0 0 24 24"
       strokeWidth="2"
       stroke="currentColor"

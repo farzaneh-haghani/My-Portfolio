@@ -18,8 +18,8 @@ const NavBar = () => {
   const MotionLink = motion(Link);
 
   return (
-    <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light">
-      <nav>
+    <header className="w-full px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-8 font-medium flex justify-between items-start dark:text-light">
+      <nav className="flex flex-col sm:flex-row">
         <HomeLink title="Home" href="/" className="mr-8" />
         <HomeLink title="Projects" href="/projects" className="mr-8" />
       </nav>
@@ -54,7 +54,7 @@ const NavBar = () => {
         </MotionLink>
         <button
           onClick={() => setMode(mode === "dark" ? "light" : "dark")}
-          className="ml-3 flex items-center justify-center rounded-full p-1"
+          className="flex items-center justify-center rounded-full hover:-translate-y-1 hover:scale-110"
         >
           {mode === "dark" ? <SunIcon /> : <MoonIcon />}
         </button>
