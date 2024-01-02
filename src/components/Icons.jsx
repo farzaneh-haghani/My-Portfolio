@@ -114,7 +114,7 @@ export const Deploy = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      class="icon icon-tabler icon-tabler-world-code w-10 h-10 ml-6 fill-light dark:fill-dark rounded-[50%]"
+      className="icon icon-tabler icon-tabler-world-code w-10 h-10 ml-6 fill-light dark:fill-dark rounded-[50%]"
       viewBox="0 0 24 24"
       strokeWidth="2"
       stroke="currentColor"

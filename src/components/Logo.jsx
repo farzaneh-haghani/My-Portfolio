@@ -28,6 +28,7 @@ const Logo = () => {
             className="w-16 h-16 rounded-full dark:border dark:border-light"
             src={logo}
             alt="my logo"
+            priority
           ></Image>
         </motion.div>
       </MotionLink>

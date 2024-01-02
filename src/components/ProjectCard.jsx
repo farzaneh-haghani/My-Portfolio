@@ -14,13 +14,13 @@ const ProjectCard = ({
   github,
 }) => {
   return (
-    <div className="relative transform-style-3d transition-all ease-out duration-1000 hover:rotate-y-180 w-full hover:backface-hidden">
-      <article className="h-full flex flex-col content-between rounded-3xl border dark:border-gray-600  shadow-slate-500 shadow-xl p-10 dark:text-slate-200 bg-neutral-100 dark:bg-neutral-900">
+    <div className="relative transform-style-3d transition-all ease-out duration-1000 hover:rotate-y-180 w-full moz-backface-hidden">
+      <article className="backface-hidden h-full flex flex-col content-between rounded-3xl border dark:border-gray-600  shadow-slate-500 shadow-xl p-10 dark:text-slate-200 bg-neutral-100 dark:bg-neutral-900">
         <div className="mb-5 flex justify-between font-bold">
-          <h2 className="text-2xl lg:text-3xl text-red-600">{title}</h2>
+          <h2 className="text-2xl text-red-600">{title}</h2>
           <span className="mt-1">{type}</span>
         </div>
-        <Image src={img} alt={title} className="border h-64" />
+        <Image src={img} alt={title} className="border h-64" priority />
         <p className="font-bold mt-1 text-center">{app}</p>
       </article>
 
