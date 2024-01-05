@@ -1,4 +1,3 @@
-"client side";
 import Logo from "./Logo";
 import Link from "next/link";
 import CustomLink from "./CustomLink";
@@ -45,7 +44,7 @@ const NavBar = () => {
       </button>
 
       {isOpen && (
-        <div className="min-w-[80vw] flex flex-col justify-between z-30 items-center fixed top-40 left-1/2 -translate-x-1/2 bg-neutral-300/80 dark:bg-neutral-500/75 rounded-lg backdrop-blur-md py-32 md:hidden">
+        <div className="min-w-[80vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-neutral-300/80 dark:bg-neutral-500/75 rounded-lg backdrop-blur-md py-32 md:hidden">
           <nav className="flex items-center flex-col justify-center">
             <CustomMobileLink title="Home" href="/" handleClick={handleClick} />
             <CustomMobileLink
