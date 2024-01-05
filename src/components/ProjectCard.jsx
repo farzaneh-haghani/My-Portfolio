@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Deploy, GitHubIcon } from "./Icons";
+import { DeployIcon, GitHubIcon } from "./Icons";
 
 const ProjectCard = ({
   type,
@@ -47,7 +47,7 @@ const ProjectCard = ({
             <GitHubIcon />
           </Link>
           <Link href={link} target="_blank">
-            <Deploy />
+            <DeployIcon />
           </Link>
         </div>
       </article>

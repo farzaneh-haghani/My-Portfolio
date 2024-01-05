@@ -110,7 +110,7 @@ export const MailIcon = () => {
   );
 };
 
-export const Deploy = () => {
+export const DeployIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -129,6 +129,26 @@ export const Deploy = () => {
       <path d="M12.5 3c2 3.206 2.837 6.913 2.508 10.537" />
       <path d="M20 21l2 -2l-2 -2" />
       <path d="M17 17l-2 2l2 2" />
+    </svg>
+  );
+};
+
+export const OpenIcon = () => {
+  return (
+    <svg
+      class="w-8 ml-6 pl-2 text-white"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 18 18"
+    >
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+      />
     </svg>
   );
 };

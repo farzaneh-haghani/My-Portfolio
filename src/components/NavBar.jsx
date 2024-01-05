@@ -25,11 +25,11 @@ const NavBar = () => {
   const MotionLink = motion(Link);
 
   return (
-    <header className="relative w-full px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-8 font-medium flex justify-between dark:text-light">
+    <header className="relative w-full px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32 py-8 font-medium flex justify-between dark:text-light">
       <button className="flex flex-col md:hidden" onClick={handleClick}>
         <span
           className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm -translate-y-0.5 ${
-            isOpen ? "rotate-45 translate-y-1" : "rotate-0 -translate-y-0.5"
+            isOpen ? "rotate-45 translate-y-2.5" : "rotate-0 -translate-y-1"
           }`}
         ></span>
         <span
@@ -39,13 +39,13 @@ const NavBar = () => {
         ></span>
         <span
           className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm translate-y-0.5 ${
-            isOpen ? "-rotate-45 -translate-y-1" : "rotate-0 translate-0.5"
+            isOpen ? "-rotate-45 -translate-y-0.5" : "rotate-0 translate-y-1"
           }`}
         ></span>
       </button>
 
       {isOpen && (
-        <div className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32 md:hidden">
+        <div className="min-w-[80vw] flex flex-col justify-between z-30 items-center fixed top-40 left-1/2 -translate-x-1/2 bg-neutral-300/80 dark:bg-neutral-500/75 rounded-lg backdrop-blur-md py-32 md:hidden">
           <nav className="flex items-center flex-col justify-center">
             <CustomMobileLink title="Home" href="/" handleClick={handleClick} />
             <CustomMobileLink
@@ -55,7 +55,7 @@ const NavBar = () => {
             />
           </nav>
 
-          <nav className="flex items-center justify-center flex-wrap">
+          <nav className="flex items-center justify-center flex-wrap mt-8">
             <MotionLink
               whileHover={{ y: -5, scale: 1.1 }}
               href="https://www.linkedin.com/in/farzaneh-haghani/"
@@ -128,7 +128,7 @@ const NavBar = () => {
         </nav>
       </div>
 
-      <div className="absolute left-[50%] translate-x-[-50%] top-2">
+      <div className="absolute right-0 md:left-[50%] translate-x-[-50%] top-2">
         <Logo />
       </div>
     </header>

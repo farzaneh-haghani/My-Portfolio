@@ -1,4 +1,3 @@
-import Head from "next/head";
 import AnimatedText from "@/components/AnimatedText";
 import ProjectCard from "@/components/ProjectCard";
 import bookMe from "public/images/bookMe.jpg";
@@ -82,7 +81,7 @@ const projects = () => {
             github="https://github.com/ShayanMahnam/team-amazon-clone"
             title="eShop"
             img={eShop}
-            summary="Experience seamless online shopping with our commercial app—a responsive React application seamlessly integrated with Firebase for secure authentication. Enjoy the convenience of effortlessly adding and removing items from your basket, elevating your shopping journey for a hassle-free and user-friendly experience."
+            summary="A responsive React application seamlessly integrated with Firebase for secure authentication. Enjoy the convenience of effortlessly adding and removing items from your basket, elevating your shopping journey for a hassle-free and user-friendly experience."
             skills="React.js-Firebase-CSS"
             app="React Application"
           />

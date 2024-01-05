@@ -1,14 +1,10 @@
 import Image from "next/image";
 import picture from "public/images/profile.jpg";
 import AnimatedText from "@/components/AnimatedText";
-import Head from "next/head";
 import Link from "next/link";
-import { DownloadIcon, MailIcon } from "../components/Icons";
-import { useState } from "react";
+import { MailIcon, OpenIcon } from "../components/Icons";
 
 export default function Home() {
-  const [isClicked, setIsClicked] = useState(false);
-
   return (
     <main className="flex flex-col lg:flex-row items-center pt-[2rem] sm:pt-[5rem] dark:bg-dark dark:text-slate-200">
       <div className="flex justify-center w-[40%]">
@@ -49,16 +45,14 @@ export default function Home() {
         </p>
         <div className="flex mt-10">
           <Link
-            onClick={() => setIsClicked(true)}
-            href="/FarzanehCV.pdf"
+            href="https://drive.google.com/file/d/1fTwl1WcjjJQ7gRgyPaE6HQOqO1ayi1Ds/view"
             target="_blank"
-            download={true}
-            className="flex items-center bg-black pt-4 pb-2 px-8 rounded-xl text-xl font-extrabold dark:border dark:border-light"
+            className="flex items-center bg-black pt-4 pb-2 px-10 rounded-xl text-xl font-extrabold dark:border dark:border-light"
           >
             <span className="text-red-600">C</span>
             <span className="text-gray-200">V</span>
-            <span className={!isClicked ? "animate-bounce" : ""}>
-              <DownloadIcon />
+            <span>
+              <OpenIcon />
             </span>
           </Link>
           <Link
@@ -69,12 +63,6 @@ export default function Home() {
             <MailIcon />
           </Link>
         </div>
-        {isClicked && (
-          <p className="text-green-600 mt-5">
-            Thank you for downloading my CV! You can find it in your download
-            directory.
-          </p>
-        )}
       </div>
     </main>
   );
