@@ -18,19 +18,19 @@ const projects = () => {
           <ProjectCard
             type="Team Work"
             link="https://star-evolution.onrender.com/"
-            github="https://github.com/fazbazjaz/star"
+            github="https://github.com/farzaneh-haghani/star"
             title="Star"
             img={star}
             businessProblem="Trainees at CodeYourFuture struggle to structure interview examples using the standardized STAR format (Situation, Task, Action, Result). A proposed solution involves a user-friendly system with individual accounts, STAR format recording, and options for commenting, searching, and sorting."
-            skills="React.js-Tanstack Query-Jest-Express.js-TypeScript-Drizzle-PostgreSQL-Oauth-Material UI"
+            skills="React.js-Tanstack Query-Jest-Express.js-TypeScript-Drizzle ORM-PostgreSQL-Oauth-Material UI-Docker"
             app="Full Stack Application"
           />
         </div>
         <div className="col-span-4">
           <ProjectCard
             type="Team Work"
-            link="https://starter-kit-all6.onrender.com"
-            github="https://github.com/karleenmsrichards/final-project-gp2"
+            link="https://starter-kit-szhj.onrender.com/"
+            github="https://github.com/farzaneh-haghani/Final-Project-BookMe"
             title="BookMe"
             img={bookMe}
             businessProblem="Users face challenges in finding and booking experts proficient in various languages for consultations. Current platforms are limited to specific services (e.g., plumbing, legal, tech) and lack inclusivity. The absence of a language filter feature complicates the process of finding professionals fluent in specific languages."
@@ -41,24 +41,24 @@ const projects = () => {
         <div className="col-span-4">
           <ProjectCard
             type="Team Work"
-            link="https://teamwork-cafe-menu.netlify.app"
+            link="http://cyf-cafe-menu.s3-website-us-east-1.amazonaws.com/"
             github="https://github.com/farzaneh-haghani/Teamwork-Cafe-Menu"
             title="CafeMenu"
             img={cafeMenu}
             businessProblem="Cafes struggle to handle menus efficiently because their management systems are not user-friendly. Without an easy admin panel, it's hard to add, edit, or remove items smoothly. The existing tools also lack a good search feature, making it tough for cafe owners to manage their menus effectively."
-            skills="React.js-Express.js-PostgreSQL-Tailwind CSS"
+            skills="React.js-Express.js-PostgreSQL-Tailwind CSS-S3-EC2-RDS-Docker-Docker Compose-CI/CD-terraform"
             app="Full Stack Application"
           />
         </div>
         <div className="col-span-4">
           <ProjectCard
             type="Individual"
-            link="https://farzaneh-haghani-video-recommendation.netlify.app"
-            github="https://github.com/farzaneh-haghani/Full-Stack-Project-Assessment"
+            link="http://cyf-video-hub.s3-website-us-east-1.amazonaws.com"
+            github="https://github.com/farzaneh-haghani/Video-Hub"
             title="Video Hub"
             img={video}
             businessProblem="Existing video platforms lack user control, particularly with YouTube content. There's a need for a user-friendly system enabling effortless video posting, deletion, and embedded watching. Additionally, essential features such as CRUD operations and voting are required for an enhanced user experience."
-            skills="React.js-Express.js-PostgreSQL-MAterial UI"
+            skills="React.js-Express.js-PostgreSQL-MAterial UI-Docker-S3-EC2-RDS-CI/CD"
             app="Full Stack Application"
           />
         </div>
