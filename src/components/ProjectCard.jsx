@@ -14,9 +14,9 @@ const ProjectCard = ({
   github,
 }) => {
   return (
-    <div className="perspective-1000">
-      <div className="relative preserve-3d hover:rotate-y-180 duration-500 h-full w-full moz-backface-hidden">
-        <article className="h-full w-full rounded-3xl backface-hidden flex flex-col content-between border p-10 dark:text-slate-200 bg-neutral-100 dark:bg-neutral-900">
+    <div className="perspective-1000 hover:transform">
+      <div className="relative preserve-3d hover:rotate-y-180 transition-transform duration-700 h-full w-full moz-backface-hidden">
+        <article className="rounded-3xl backface-hidden flex flex-col content-between border dark:border-gray-600  shadow-slate-500 shadow-xl p-10 dark:text-slate-200 bg-neutral-100 dark:bg-neutral-900">
           <div className="mb-5 flex justify-between font-bold">
             <h2 className="text-2xl text-red-600">{title}</h2>
             <span className="mt-1">{type}</span>
@@ -27,7 +27,7 @@ const ProjectCard = ({
 
         <article
           className="absolute top-0 backface-hidden rotate-y-180 rounded-3xl h-full w-full flex flex-col justify-evenly 
-      border sm:p-4 dark:text-slate-200"
+      border dark:border-gray-600  shadow-slate-500 shadow-xl sm:p-4 dark:text-slate-200"
         >
           <div className="px-5 pt-5 text-sm">
             <p>
