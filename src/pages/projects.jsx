@@ -9,7 +9,7 @@ import eShop from "public/images/eShop.jpg";
 
 const projects = () => {
   return (
-    <main className="flex flex-col justify-start items-center min-h-full py-[5rem] px-[1rem] sm:px-[2rem] md:px-[3rem] lg:px-[4rem] xl:px-[5rem]">
+    <main className="flex flex-col justify-start items-center min-h-full py-[2rem] px-[1rem] sm:px-[2rem] md:px-[3rem] lg:px-[4rem] xl:px-[5rem]">
       <div>
         <AnimatedText text="My Projects" />
       </div>
@@ -42,11 +42,11 @@ const projects = () => {
           <ProjectCard
             type="Team Work"
             link="http://cyf-cafe-menu.s3-website-us-east-1.amazonaws.com/"
-            github="https://github.com/farzaneh-haghani/Teamwork-Cafe-Menu"
+            github="https://github.com/farzaneh-haghani/Cloud-Cafe-Menu"
             title="CafeMenu"
             img={cafeMenu}
             businessProblem="Cafes struggle to handle menus efficiently because their management systems are not user-friendly. Without an easy admin panel, it's hard to add, edit, or remove items smoothly. The existing tools also lack a good search feature, making it tough for cafe owners to manage their menus effectively."
-            skills="React.js-Express.js-PostgreSQL-Tailwind CSS-S3-EC2-RDS-Docker-Docker Compose-CI/CD-terraform"
+            skills="React.js-Express.js-PostgreSQL-Tailwind CSS-AWS-Docker Compose-CI/CD-terraform"
             app="Full Stack Application"
           />
         </div>
@@ -58,7 +58,7 @@ const projects = () => {
             title="Video Hub"
             img={video}
             businessProblem="Existing video platforms lack user control, particularly with YouTube content. There's a need for a user-friendly system enabling effortless video posting, deletion, and embedded watching. Additionally, essential features such as CRUD operations and voting are required for an enhanced user experience."
-            skills="React.js-Express.js-PostgreSQL-MAterial UI-Docker-S3-EC2-RDS-CI/CD"
+            skills="React.js-Express.js-PostgreSQL-MAterial UI-Docker-AWS-CI/CD"
             app="Full Stack Application"
           />
         </div>

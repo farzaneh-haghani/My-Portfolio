@@ -57,6 +57,7 @@ const NavBar = () => {
           <nav className="flex items-center justify-center flex-wrap mt-8">
             <MotionLink
               whileHover={{ y: -5, scale: 1.1 }}
+              aria-label="LinkedIn Profile"
               href="https://www.linkedin.com/in/farzaneh-haghani/"
               target="_blank"
             >
@@ -65,6 +66,7 @@ const NavBar = () => {
 
             <MotionLink
               whileHover={{ y: -5, scale: 1.1 }}
+              aria-label="GitHub Profile"
               href="https://github.com/farzaneh-haghani"
               target="_blank"
             >
@@ -73,6 +75,7 @@ const NavBar = () => {
 
             <MotionLink
               whileHover={{ y: -5, scale: 1.1 }}
+              aria-label="Twitter Profile"
               href="https://twitter.com/FarzanehHaghani"
               target="_blank"
             >
@@ -97,6 +100,7 @@ const NavBar = () => {
         <nav className="flex items-center justify-center flex-wrap">
           <MotionLink
             whileHover={{ y: -5, scale: 1.1 }}
+            aria-label="LinkedIn Profile"
             href="https://www.linkedin.com/in/farzaneh-haghani/"
             target="_blank"
           >
@@ -105,6 +109,7 @@ const NavBar = () => {
 
           <MotionLink
             whileHover={{ y: -5, scale: 1.1 }}
+            aria-label="GitHub Profile"
             href="https://github.com/farzaneh-haghani"
             target="_blank"
           >
@@ -113,12 +118,14 @@ const NavBar = () => {
 
           <MotionLink
             whileHover={{ y: -5, scale: 1.1 }}
+            aria-label="Twitter Profile"
             href="https://twitter.com/FarzanehHaghani"
             target="_blank"
           >
             <TwitterIcon />
           </MotionLink>
           <button
+            aria-label="Change Background Color"
             onClick={() => setMode(mode === "dark" ? "light" : "dark")}
             className="flex items-center justify-center rounded-full hover:-translate-y-1 hover:scale-110"
           >
